@@ -13,7 +13,7 @@ sh 'echo test'
 }
 stage('deploy'){
 steps{
-sh 'echo deploy'
+sh 'echo deploy calling from ${JOB_NAME}'
 }
 }
 }
