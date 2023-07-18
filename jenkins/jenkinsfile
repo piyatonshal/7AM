@@ -1,4 +1,4 @@
-..pipeline{
+pipeline{
 agent any
 stages{
 stage('build'){
@@ -10,11 +10,8 @@ stage('test'){
 steps{
 sh 'echo test'
 }
-}
-stage('deploy'){
-steps{
-sh 'echo deploy calling from ${JOB_NAME} and jobsecurity'
+
 }
 }
 }
-}
+
